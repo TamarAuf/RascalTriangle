@@ -9,11 +9,11 @@ public class RascalMain {
         try {
             File file = new File("input");
             Scanner scanner = new Scanner(file);
-            int P = Integer.parseInt(scanner.nextLine());
+            int P = scanner.nextInt();
             System.out.println(P);
             for(int i = 0; i < P; i++){
                 if(scanner.hasNext()){
-                    System.out.print(scanner.next() + " ");
+                    System.out.print(scanner.nextInt() + " ");
                     System.out.println(rascal.R(scanner.nextInt(), scanner.nextInt()));
                 }
             }
